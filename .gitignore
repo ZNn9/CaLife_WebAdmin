@@ -23,6 +23,10 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+[Bb]uild/
+[Oo]ut
+[Pp]ublish/
+
 # .NET Core
 project.lock.json
 project.fragment.lock.json
@@ -54,4 +58,76 @@ TestResult.xml
 nunit-*.xml
 
 # Appsettings
-appsettings.Developing.json
+appsettings.Development.json
+
+#########################
+# Ignore Node.js / Frontend (if using React, Vue, etc.)
+#########################
+
+# Node modules
+node_modules/
+
+# Yarn lock
+yarn.lock
+
+# npm log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# Environment files (sensitive)
+.env
+.env.*
+
+#########################
+# Ignore Docker
+#########################
+
+# Docker files
+*.dockerignore
+docker-compose.override.yml
+
+# Docker build folders (optional, depends on your build structure)
+docker-build/
+
+# Docker generated files (optional)
+*.tar
+
+#########################
+# Ignore Miscellaneous
+#########################
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# MacOS
+.DS_Store
+
+# IDE Common caches
+*.sln.ide
+*.idea/
+*.vs/
+
+# Other temporary or backup files
+*.bak
+*.swp
+*.swo
+*.swn
+*.orig
+
+#########################
+# Ignore Test Results (Optional)
+#########################
+
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.testresult
+*.trx
